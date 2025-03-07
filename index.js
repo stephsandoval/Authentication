@@ -7,7 +7,8 @@ const passport = require('passport');                                           
 const session = require('express-session');                                          // import session for handling user sessions
 const path = require('path');                                                        // import path module
 
-require('./auth');                                                                   // Load authentication strategy from auth.js
+require('./auth');                                                                   // load authentication strategy from auth.js
+require('dotenv').config();                                                          // environment variables
 
 /* ----------------------------------------------------- */
 // Middleware to check if the user is authenticated
